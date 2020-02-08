@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora</title>
+  <style>
+    .display{
+     width: 200px;
+     height: 50px;
+    }
+  button{
+    width: 50px;
+    height: 50px;
+  }</style>
+</head>
+<body>
+  <input id="display" type="text"><br>
+  <br>
+  <br>
+
+  <button onclick="clique(7)" >7</button>
+  <button onclick="clique(8)" >8</button>
+  <button onclick="clique(9)" >9</button>
+  <button onclick="clique('/')" >/</button>
+  <br>
+  <button onclick="clique(4)" >4</button>
+  <button onclick="clique(5)" >5</button>
+  <button onclick="clique(6)" >6</button>
+  <button onclick="clique('*')" >*</button>
+  <br>
+  <button onclick="clique(1)" >1</button>
+  <button onclick="clique(2)" >2</button>
+  <button onclick="clique(3)" >3</button>
+  <button onclick="clique('-')" >-</button>
+  <br>
+  <button onclick="clique(0)" >0</button>
+  <button onclick="clique('.')" >,</button>
+  <button onclick="clique('+')" >+</button>
+  <button onclick="clique('=')" >=</button>
+  <br>
+  <button onclick="clearScr()">Limpar</button>
+  
+  <script>
+    let input = document.getElementById('display');
+ 
+      function clique(value){
+        value === '=' ? input.value = eval(input.value) : input.value = input.value + value
+      }
+
+      function clearScr(){
+        valueDisplay = '';
+        fat1 = '';
+        fat2 = '';
+        operacao = '';
+        input.value = '';
+      }
+  </script>
+</body>
+</html>
