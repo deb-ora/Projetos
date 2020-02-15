@@ -1,0 +1,78 @@
+.container {
+  width: 50%;
+  color: #6a8085;
+  #newItem {
+    width: 80%;
+    margin-right: 35px;
+    margin-left: 40px;
+  }
+  #addBtn {
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color: #ededed;
+    border-radius: 15px;
+    border: 1px solid #d6bcd6;
+    display: inline-block;
+    color: #6a8085;
+    font-size: 20px;
+    padding: 7px 10px;
+    text-decoration: none;
+    text-shadow: 0px 0px 50px #e1e2ed;
+  }
+  #addBtn:hover {
+    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color: #bab1ba;
+  }
+  #addBtn:active {
+    position: relative;
+    top: 1px;
+  }
+
+  ul {
+    line-height: 2.25;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style-type: none;
+      button {
+        width: 30px;
+        height: 30px;
+        box-shadow: 3px 4px 0px 0px #899599;
+        background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+        background-color: #ededed;
+        border-radius: 15px;
+        border: 1px solid #d6bcd6;
+        display: inline-block;
+        cursor: pointer;
+        color: #3a8a9e;
+        font-family: Arial;
+        font-size: 15px;
+        padding: 0px;
+        text-decoration: none;
+        text-shadow: 0px 0px 50px #e1e2ed;
+        margin-right: 35px;
+      }
+      button:hover {
+        background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+        background-color: #bab1ba;
+      }
+      button:active {
+        position: relative;
+        top: 1px;
+      }
+
+      input {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+
+.completed{
+  background-color: rgba(73, 191, 132, 0.75);
+  
+}
