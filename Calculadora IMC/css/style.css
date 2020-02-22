@@ -1,0 +1,41 @@
+body {
+  background-color: beige;
+  color: #c3b091; }
+
+.container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container form input {
+      width: 200px;
+      height: 40px; }
+  .container button {
+    align-self: center;
+    width: 200px; }
+  .container #resposta {
+    margin-top: 20px; }
+  .container table {
+    width: 100%;
+    border-radius: 35px; }
+    .container table thead {
+      background-color: rgba(255, 253, 208, 0.979) !important;
+      text-transform: uppercase;
+      align-items: center; }
+    .container table .active {
+      background-color: rgba(255, 253, 208, 0.979) !important;
+      font-weight: bold; }
+    .container table td {
+      border-bottom: 1px solid #7070707e; }
+  .container #result {
+    background: #464040;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 200px;
+    margin: 40px 0px; }
