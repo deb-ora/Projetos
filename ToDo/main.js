@@ -1,3 +1,8 @@
+// incluir cada item(tarefa) em um objeto tarefas
+//loop tarefas e por cada  tarefa , incluir em lista. display block
+
+
+
 let addItem = () => {
   let newItem = document.getElementById("newItem").value;
   let lista = document.getElementById("lista");
@@ -10,7 +15,7 @@ let checkBox = document.createElement("input");
   delBtn.innerText ='X';
   checkBox.setAttribute("type", "checkbox");
   checkBox.setAttribute("class", "done");
-  checkBox.addEventListener("onchange", isDone );
+  checkBox.addEventListener("change", isDone );
 
   newLi.append(checkBox, delBtn);
   lista.append(newLi);
@@ -26,11 +31,9 @@ let removeItem = item => {
   item.parentNode.parentNode.removeChild(item.parentNode);
 };
 
-
-
-
 let isDone = (event) =>{
-  //let el = document.getElementsByClassName('done');
-  //let list = document.getElementsByTagName('li');
- event.target.checked === true ? list.classList.add('completed') : list.classList.remove('completed');
+
+ event.target.checked === true ? event.target.parentNode.classList.add('completed') : event.target.parentNode.classList.remove('completed');
 }
+
+
